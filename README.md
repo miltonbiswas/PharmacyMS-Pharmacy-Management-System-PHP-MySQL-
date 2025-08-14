@@ -38,29 +38,36 @@ This system allows retail/wholesale medical shop owners to manage medicines, inv
 
 ---
 
-## 📂 Project Structure
 pharmacyms/
+├── 📁 assets/ # CSS, JS, and images
+│ ├── style.css # Main stylesheet
+│ ├── script.js # Main JavaScript file
+│ └── logo.png # App logo
 │
-├── db.php # Database connection file
-├── index.php # Homepage / Dashboard
+├── 📁 includes/ # Reusable PHP includes
+│ ├── db.php # Database connection
+│ ├── header.php # Common header
+│ ├── footer.php # Common footer
 │
-├── src/
-│ ├── medicines/
-│ │ ├── add.php # Add medicine
-│ │ ├── edit.php # Edit medicine
-│ │ ├── delete.php # Delete medicine
-│ │ └── list.php # List all medicines
-│ │
-│ ├── sales/
-│ │ ├── cart.php # Sales cart system
-│ │ ├── checkout.php # Final checkout (stores customer name & phone)
-│ │ └── history.php # Sales history
+├── 📁 screenshots/ # App screenshots for README
+│ ├── login_page.png
+│ ├── billing_page.png
+│ └── inventory_page.png
 │
-└── assets/
-├── css/ # Stylesheets
-└── js/ # JavaScript files
-
-
+├── 📁 sql/ # Database exports
+│ └── pharmacyms.sql # SQL dump file
+│
+├── index.php # Login page
+├── dashboard.php # Dashboard page
+├── billing.php # Billing system
+├── checkout.php # Checkout & store customer info
+├── inventory.php # Inventory management
+├── add_product.php # Add new medicine
+├── edit_product.php # Edit medicine details
+├── delete_product.php # Delete medicine
+│
+├── README.md # Project documentation
+└── LICENSE # License file
 ---
 
 ## 📥 Installation & Setup
