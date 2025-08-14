@@ -39,4 +39,39 @@ This system allows retail/wholesale medical shop owners to manage medicines, inv
 ---
 
 ## 📂 Project Structure
+pharmacyms/
+│
+├── db.php # Database connection file
+├── index.php # Homepage / Dashboard
+│
+├── src/
+│ ├── medicines/
+│ │ ├── add.php # Add medicine
+│ │ ├── edit.php # Edit medicine
+│ │ ├── delete.php # Delete medicine
+│ │ └── list.php # List all medicines
+│ │
+│ ├── sales/
+│ │ ├── cart.php # Sales cart system
+│ │ ├── checkout.php # Final checkout (stores customer name & phone)
+│ │ └── history.php # Sales history
+│
+└── assets/
+├── css/ # Stylesheets
+└── js/ # JavaScript files
+
+
+---
+
+## 📥 Installation & Setup
+
+### 1️⃣ Install XAMPP
+- Download and install [XAMPP](https://www.apachefriends.org/).
+- Start **Apache** and **MySQL**.
+
+### 2️⃣ Clone the Repository
+```bash
+cd C:\xampp\htdocs\
+git clone https://github.com/yourusername/pharmacyms.git
+
 
