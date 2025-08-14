@@ -36,38 +36,7 @@ This system allows retail/wholesale medical shop owners to manage medicines, inv
 - **Database:** MySQL
 - **Server:** Apache (XAMPP)
 
----
 
-pharmacyms/
-├── 📁 assets/ # CSS, JS, and images
-│ ├── style.css # Main stylesheet
-│ ├── script.js # Main JavaScript file
-│ └── logo.png # App logo
-│
-├── 📁 includes/ # Reusable PHP includes
-│ ├── db.php # Database connection
-│ ├── header.php # Common header
-│ ├── footer.php # Common footer
-│
-├── 📁 screenshots/ # App screenshots for README
-│ ├── login_page.png
-│ ├── billing_page.png
-│ └── inventory_page.png
-│
-├── 📁 sql/ # Database exports
-│ └── pharmacyms.sql # SQL dump file
-│
-├── index.php # Login page
-├── dashboard.php # Dashboard page
-├── billing.php # Billing system
-├── checkout.php # Checkout & store customer info
-├── inventory.php # Inventory management
-├── add_product.php # Add new medicine
-├── edit_product.php # Edit medicine details
-├── delete_product.php # Delete medicine
-│
-├── README.md # Project documentation
-└── LICENSE # License file
 ---
 
 ## 📥 Installation & Setup
@@ -81,4 +50,64 @@ pharmacyms/
 cd C:\xampp\htdocs\
 git clone https://github.com/yourusername/pharmacyms.git
 
+3️⃣ Import the Database
 
+Open phpMyAdmin in your browser:
+http://localhost/phpmyadmin
+
+Create a new database: pharmacyms
+
+Import the provided pharmacyms.sql file from the project folder.
+
+4️⃣ Configure Database Connection
+
+Open db.php and update MySQL username/password if needed:
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "pharmacyms";
+
+5️⃣ Run the Application
+
+Visit:
+http://localhost/pharmacyms
+
+🧑‍💻 Usage
+Adding Medicine
+Go to Medicines → Add
+Fill in details like Name, Batch No., Expiry Date, Quantity, Price.
+Selling Medicines
+Go to Sales → Cart
+Add medicines to the cart
+Click Checkout
+Enter Customer Name and Phone Number
+Bill will be generated, and stock will be updated automatically.
+
+📜 License
+
+This project is licensed under the MIT License - you can use, modify, and distribute it freely.
+
+Author
+
+Milton Biswas
+📧 Email: miltonbiswasdev@gmail.com
+💼 GitHub: miltonbiswas
+
+
+🤝 Contributing
+
+Pull requests are welcome.
+For major changes, please open an issue first to discuss what you would like to change.
+
+⭐ Support
+
+If you find this project useful, please star the repository to show your support!
+
+---
+
+If you want, I can now also prepare:  
+1. **SQL dump file (`pharmacyms.sql`)**  
+2. **Screenshot pack** with neatly named PNGs for each page  
+
+so the repo is **completely ready to upload** without extra work.  
+Do you want me to prepare those now?
